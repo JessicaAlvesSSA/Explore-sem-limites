@@ -1,0 +1,179 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.page {
+  overflow: hidden;
+  font-family: 'Mulish', sans-serif;
+}
+
+h1,
+h2 {
+  color: #B52184;
+}
+
+p {
+  color: #312D64;
+  font-size: 20px;
+}
+
+.page>header {
+  text-align: center;
+}
+
+img.astronaut {
+  width: 80%;
+  margin-bottom: 1rem;
+}
+
+img.button {
+  margin: 2rem auto 6rem;
+}
+
+.content {
+  padding: 4rem 2rem;
+  background: linear-gradient(96.21deg, #343193 0%, #302C63 99.68%);
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.card {
+  text-align: left;
+  background: #FFF;
+  padding: 1.5rem;
+  padding-right: 4rem;
+  border-radius: 20px;
+}
+
+.card>header>img {
+  margin-bottom: 2rem;
+}
+
+.card>main>p {
+  font-size: 1rem;
+  margin-top: 19px;
+}
+
+.contact {
+  padding: 5rem 3rem 4rem;
+}
+
+fieldset {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  margin-top: 20px;
+  border: none;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 12px 16px 12px 40px;
+  border-radius: 16px;
+  border: 1px solid #312D64;
+}
+
+textarea {
+  height: 126px;
+  padding-left: 16px;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #312D64;
+}
+
+control {
+  position: relative;
+}
+
+control>img {
+  position: absolute;
+  left: 10px;
+  top: 8px;
+}
+
+button {
+  width: fit-content;
+  padding: 1rem;
+  border-radius: 16px;
+  border: none;
+  background: #312D64;
+  color: #FFF;
+}
+
+footer {
+  background: linear-gradient(96.21deg, #343193 0%, #302C63 99.68%);
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+footer>p {
+  color: #FFF;
+  font-size: 19px;
+}
+
+.dsk {
+  display: none;
+}
+
+
+@media (min-width: 780px) {
+  h1 {
+    font-size: 50px;
+  }
+
+  p {
+    font-size: 32px;
+  }
+
+  .page>header {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 2rem;
+  }
+
+  img.astronaut {
+    width: auto;
+    margin-bottom: 0;
+    position: relative;
+  }
+
+  .page>header>div {
+    text-align: left;
+  }
+
+  img.button {
+    margin: 0;
+    margin-top: 100px;
+  }
+
+  .cards {
+    flex-direction: row;
+  }
+
+  .contact {
+    display: flex;
+    padding: 0;
+  }
+
+  form {
+    width: 595px;
+    margin: auto;
+  }
+
+  .dsk {
+    display: block;
+    width: 40%;
+  }
+}
